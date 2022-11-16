@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 /* Variables */
 :root {
   --font-family: "Roboto", sans-serf;
@@ -68,7 +68,7 @@ nav {
     transition: var(--transition);
   }
   nav a:hover {
-    color: green;
+    color: #A15E42;
     border-bottom: 2px solid grey;
   }
   
@@ -86,35 +86,95 @@ nav {
 /* style for the landing Page */
 .hero {
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
     margin: auto;
   }
 
   .hero img {
-    position: relative;
-    width: 1200px;
-    height: 600px;
-    left: 20px;
-    top: 20px;
+   
+    height: 40rem;
+    width: 60rem;
     border-radius: 20px;
+    margin-left: 0px;
   }
   
   .bio {
     position: absolute;
-    width: 841px;
-    height: 526px;
-    left: 927px;
-    top: 286px;
+    background: rgba(66, 58, 58, 0.65);
+    opacity: 90%;
+    width: 28rem;
+    height:19rem;
+    margin-left: 750px;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   }
   
-  .bio h1 {
+  .bio h2 {
     margin-bottom: var(--bottom-margin);
+    color: white;
+    padding-left: 20px;
+    font-size: 36px;
   }
   
   .bio p {
+    padding-left: 20px;
     line-height: var(--line-height);
-    padding: 0.3rem 0;
+    padding-top: 20px;
+    color: white;
+    font-size: 28px;;
   }
+  .bio button {
+    margin-top: 50px;
+    margin-left: 90px;
+    justify-content: center;
+    width: 200.78px;
+    height: 60.53px;
+    left: 1182px;
+    top: 673px;
+    color: #fcfcfc;
+    font-size: 20px;
+    border-radius: 20%;
+    background-color: #0a0a09;
+  }
+  
+
+
+/* style for the footer
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302f49;
+  padding: 40px 80px;
+} */
