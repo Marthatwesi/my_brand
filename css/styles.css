@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 /* Variables */
 :root {
@@ -19,7 +20,7 @@
 /* Variables end */
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:inherit;
 }
 
 /* css for the nav bar */
@@ -44,7 +45,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  overflow:unscrollable;
+
 }
 nav {
     position: sticky;
@@ -85,6 +86,7 @@ nav {
 
 /* style for the landing Page */
 .hero {
+  padding-top: 20px;
     display: flex;
     position: relative;
     align-items: center;
@@ -143,38 +145,348 @@ nav {
   
 
 
-/* style for the footer
-.bottom-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 40px 0;
-}
 
-.bottom-links .links {
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  
+  font-family: 'Poppins', sans-serif;
+}
+.about-wrapper{
+   height: 100vh;
+}
+.about-left{
+  /* background-color: #21D4FD; */
+  background-image: linear-gradient(19deg, #2d231f 0%, #9D9696  100%);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+  color:#fff
+}
+.about-left-content > div{
+  background: #A15E42;
+  opacity: 80%;
+  padding: 4rem 4rem 2.5rem 5rem;
+  text-align: center;
+  
+  border-radius: 12px 12px 0 0;
+}
+.about-left-content{
+  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+  border-radius: 12px;
+  width:80%;
+}
+.about-img img{
+  display: block;
+  width: 200px;
+}
+.about-img{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.shadow{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.about-left-content h2{
+  font-size: 2rem;
+  margin: 2.2rem 0 0.6rem 0;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #A15E42;
+}
+.about-left-content h3{
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-top: 1.2rem;
+}
+.icons{
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem 0;
+  border-radius: 0 0 12px 12px;
+}
+.icons li{
+  list-style-type: none;
+  background: #A15E42;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
-
-.bottom-links .links span {
-  font-size: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 10px 0;
+.icons li:hover{
+  background: #edffec;
+  color: #000;
 }
-
-.bottom-links .links a {
-  text-decoration: none;
-  color: #a1a1a1;
-  padding: 10px 20px;
-}
-footer {
+.about-right{
+  background: black;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  background-color: #302f49;
-  padding: 40px 80px;
-} */
+  justify-content: center;
+  padding: 0 5rem;
+  text-align: center;
+  color:#fff
+}
+.about-right h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.about-right h1 span{
+  color: #A15E42;
+}
+.about-right h2{
+  font-weight: 600;
+}
+.about-btns{
+  display: flex;
+  margin: 2rem 0;
+}
+.btn{
+  border: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 0.55rem 0;
+  width: 130px;
+  font-weight: 600;
+  background: transparent;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  color:#fff
+}
+#btn1{
+  background: #A15E42;
+  color: #fff;
+  border-color: #A15E42;
+  transition: all 0.5s ease-in-out;
+}
+#btn1:hover{
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+#btn{
+  transition: all 0.5s ease-in-out;
+}
+#btn2:hover{
+  background: #A15E42;
+  border-color: #A15E42;
+  color: #fff;
+}
+#about-para p{
+  font-weight: 300;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 992px){
+  .about-wrapper{
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+  }
+
+  .about-left{
+      position: relative;
+  }
+  .about-left-content{
+      position: absolute;
+      width:80%
+  
+  }
+}
+.credit{
+  text-align: center;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.credit a{
+  text-decoration: none;
+  color:#B721FF;
+  font-weight: bold;
+} 
+/* styles for myskils section */
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  color: #A15E42;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-bottom: 1rem;
+  font-size: 35px;
+}
+.skill_img img{
+  size: 60px;
+  align-items: center;
+}
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+  float: left;
+}
+.circle-wrap {
+
+  width: 150px;
+  height: 150px;
+  background: #fefcff;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: white;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+
+  color: black;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+.circle-wrap .inside-circle .image {
+margin: 30px;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+}
+.circle-wrap .inside-circle .image2 {
+  margin: 30px;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+  }
+  
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #A15E42;
+}
+
+
+.mask.full,
+.circle .fill{
+  animation: fill ease-in-out 3s ;
+  transform: rotate(180deg);
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* style for the portfolio */
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* styles for the footer */
+.vl{
+  border-left: 2px solid black;
+  height: 300px;
+  margin-left: 16px;
+  
+}
+.vl2{
+  border-left: 2px solid black;
+  height: 160px;
+  margin-left: 16px;
+  
+}
+.socials {
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  left: 6%;
+  bottom: 8%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+.copy{
+  margin-top: 8px;
+  margin-left: 99px;
+  bottom: 8%;
+}
