@@ -12,14 +12,23 @@
 </head>
 
 <body>
+  <!-- ========== Start pre loader ========== -->
+  <div class="preloader">
+    <div class="box">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ========== End pre loader ========== -->
   <nav class="navbar">
     <h1><a href="#">MARTHA TWESIGYE</a></h1>
     <ul class="navigation">
       <li><a href="#home">Home</a></li>
       <li><a href="./about.html" class="nav-link">About Me</a></li>
-      <li><a href="./index.html" class="nav-link">Skills</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="./blog.html" class="nav-link">Blog</a></li>
-      <li><a href="./contact.html" class="nav-link">Contact</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
       <li><a href="./login.html" class="nav-link">Login</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
@@ -34,139 +43,144 @@
       <p class="bio-text">
         Hey, I am Martha Twesigye. I Support clients around the world with Creative Development.
       </p>
-      <button class="btn1">Contact Me</button>
+      <a href="./about.html"><button  id="btn1" class = "btn">About Me</button></a>
     </div>
   </section>
   <section class="skills" id="skills">
     <h2 class="skill-header">My Skills</h2>
 
     <div class="skills-wrapper">
-    
-
-        <div class="icon icon-card">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill"></div>
-              </div>
-              <div class="inside-circle">
-                <img src="./img/html5.svg" alt="" loading="lazy" class="image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="icon icon-card">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill"></div>
-              </div>
-              <div class="inside-circle">
-                <img src="./img/css3.svg" alt="" loading="lazy" class="image" />
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <div class="icon icon-card">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill"></div>
-              </div>
-              <div class="inside-circle">
-                <img src="./img/js.svg" alt="" loading="lazy" class="image" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="icon icon-card">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill"></div>
-              </div>
-              <div class="inside-circle">
-                <img src="./img/react.svg" alt="" loading="lazy" class="image" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="icon icon-card">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full">
-                <div class="fill"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill"></div>
-              </div>
-              <div class="inside-circle">
-                <img src="./img/icons8-java.svg" alt="" loading="lazy" class="image" />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="./img/icons8-bootstrap.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./img/icons8-java.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./img/js.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
       </div>
 
-  </section>
-  
-
-
-  
-
-  <section class="projects" id="projects">
-    <h2 class="projects-title">MY Work</h2>
-    <div class="projects-container">
-      <div class="project-container project-card">
-        <img src="./img/project1.jpg" alt="expense-tracker" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Expense Tracker</h3>
-        <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
-      </div>
-      <div class="project-container project-card">
-        <img src="./img/project3.jpg" alt="netflic-clone" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Netflix Clone</h3>
-        <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
-      </div>
-      <div class="project-container project-card">
-        <img src="./img/project2.jpg" alt="greeny-earth" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Greeny Earth</h3>
-        <p class="project-details">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-          ratione vel inventore labore commodi modi quos culpa aut saepe!
-          Alias!
-        </p>
-        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="./img/css3.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./img/html5.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./img/react.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
       </div>
     </div>
   </section>
 
 
+  
 
+  <section class="projects" id="projects">
+    <h2 class="projects-title">My Work</h2>
+    <div class="projects-container">
+     
+      <div class="project-container project-card">
+        <img src="./img/project1.jpg" alt="expense-tracker" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Expense Tracker</h3>
+        <p class="project-details">
+          An App to help you track and manage your expenses.
+          Easy to use and very beautful user experience. Please Download App
+        </p>
+        <a href="https://github.com/Marthatwesi" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="./img/project3.jpg" alt="netflic-clone" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Dermatology App</h3>
+        <p class="project-details">
+          Patients are able to book their Dermatology appointments with the doctor.Able to book , cancel and reshudule.
+
+        </p>
+        <a href="https://github.com/Marthatwesi" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="./img/project2.jpg" alt="greeny-earth" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Greeny Earth</h3>
+        <p class="project-details">
+          We're on a mission to bring about positive environmental change by inspiring hearts and minds and sharing sustainable living practices ...
+        </p>
+        <a href="https://github.com/Marthatwesi" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h2>Please Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyylngw" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Enter Your Message"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Send"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </div>
+  </section> 
+  <footer>
 
 
 
@@ -191,7 +205,16 @@
 
 
 
-
+  <script src="js/main.js"></script>
+  <!-- ICONS -->
+  <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 </body>
 
 </html>

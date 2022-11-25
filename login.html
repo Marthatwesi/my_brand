@@ -13,41 +13,46 @@
 <body>
 
         <h2>MARTHA'S WEBSITE</h2>
-       
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto py-4 px-0">
-                    <div class="card p-0">
-                        <div class="card-title text-center">
-                            <h5 class="para">Please Login to your cool account below!</small>
-                        </div>
-                        <form class="signup">
-                            <div class="form-group"><input type="text" class="form-control" placeholder="Username"></div>
-                            <div class="form-group"><input type="password" class="form-control" placeholder="password"></div> 
-                            <input
-                            type="submit"
-                            value="Send"
-                            id="submit-btn"
-                            class="submit-btn"
-                          />
-            
-                        </form>
-                    </div>
+        <h3>Please login Here!</h3>
+        <section class="login-section" id="login">
+          <div class="login-form-container">
+            <div class="login-form">
+              <form class="login-form2" action="https://formspree.io/f/xyylngw" method="POST">
+                <div class="form-control">
+                
+                  <input
+                    type="email"
+                    id="email"
+                    name="sender-name"
+                    placeholder="Enter your Email"
+                    class="input-field"
+                    required
+                  />
                 </div>
+                <div class="form-control">
+                  <input
+                    type="password"
+                    id="password"
+                    name="sender-email"
+                    placeholder="Enter Your Password"
+                    class="input-field"
+                    required
+                  />
+                </div>
+                
+                <button type="submit" class="submit-btn">Send</button>
+              </form>
             </div>
-        </div>
-
-
-       
-    
-            <section class="main">
-              <div class="main-top">
-                <h1>DASHBOARD</h1>
-                <i class="fas fa-user-cog"></i>
-              </div>
+          </div>
+        </section>
+              
               <section class="attendance">
+                <div class="main-top">
+                  <h1>DASHBOARD</h1>
+                  <a href="./create.html"><button class="new-blog">Create New Blog</button></a>
+                  <a href="./mail.html"><button class="mail" id="./mail.html">View Messages</button></a>
+                </div>
                 <div class="attendance-list">
-                  
                   <table class="table">
                     <thead>
                       <tr>
@@ -103,10 +108,8 @@
                   </table>
                 </div>
               </section>
-            </section>
-        
-        
-        
+          </div>
+        </section>
         
    
     

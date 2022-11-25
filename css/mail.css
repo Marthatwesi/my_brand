@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+*
+
+/* nav bar styling */
+
+
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  body {
+    font-family: var(--font-family);
+    overflow:unscrollable;
+  }
+  nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3.5rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    nav h1{
+      font-weight: bold;
+      color: black;
+  
+    }
+    
+    nav a {
+      color: black;
+      transition: var(--transition);
+    }
+    nav a:hover {
+      color: #A15E42;
+      border-bottom: 2px solid grey;
+    }
+    
+    nav ul {
+      display: flex;
+      gap: 1.9rem;
+
+    }
+    
+    nav ul li {
+      font-weight: bold;
+    }
+    .burger-menu {
+      color:#A15E42 ;
+      font-size: 2rem;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      display: none;
+    }
+    
+  ul {
+    list-style-type: none;
+  }
+  html, body {
+    background: white;
+    font: 14px Tahoma, Geneva, sans-serif;
+    width: 100%; height: 100%;
+  }
+  
+  header {
+    margin: 0px auto;
+    position: relative;
+    width: 90%; max-width: 960px;
+    height: 100px;
+  }
+  
+  header h1 {
+    margin: 0px; padding: 50px 0px 0px;
+    color: black;
+    font-size: 30px;
+  }
+  
+  .mailbox {
+    margin: 0px auto -100px;
+    position: relative;
+    background: #A15E42;
+    border-radius: 0px 5px 0px 0px;
+    width: 90%; max-width: 960px;
+  }
+  
+  .nav2 {
+    position: absolute;
+    top: 0px; bottom: 0px;
+    background: #EEE;
+    width: 140px;
+  }
+  
+  .nav2 a {
+    display: block;
+    padding: 4px 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav2 a.active {
+    background: #A15E42;
+  }
+  
+  .nav2 a:first-child {
+    margin: 10px 0px 10px;
+  }
+  
+  .messages {
+    padding: 10px 10px 10px 210px;
+    width: 100%;
+  }
+  
+  .actions-dropdown {
+    display: block;
+    float: right;
+    position: relative;
+    /* margin: 5px 5px 5px 0px; */
+  }
+  
+  
+  
+  input[name=search] {
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: #EEE;
+    font: 14px Tahoma, Geneva, sans-serif;
+    border-radius: 5px;
+  }
+  
+  input[name=search]:focus {
+    outline: none;
+  }
+  
+  .message {
+    clear: both;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px;
+    background: #EEE;
+    border-radius: 5px;
+  }
+  
+  .message input {
+    position: absolute;
+    top: 8px; left: 10px;
+    width: 30px;
+  }
+  
+  .message .sender {
+    display: block;
+    position: absolute;
+    left: 40px;
+    color: #000;
+    font-weight: bold;
+    width: 90px;
+  }
+  
+  .message .title {
+    display: inline-block;
+    padding-left: 150px;
+    width: 100%;
+  }
+  
+  .message .date {
+    position: absolute;
+    right: 10px;
+  }
+  
+  @media (min-width: 280px) and (max-width: 720px){
+    nav {
+        display: flex;
+        padding: 0.5rem 0.5rem;
+      
+      }
+      nav ul {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.852);
+        flex-direction: column;
+        top: 55px;
+        left:50%;
+        margin-top: 0%;
+        width: 50%;
+        padding: 0;
+        text-align: center;
+        transform: translateX(200%);
+        transition: transform 0.5s ease-in;
+      }
+    
+       nav ul li {
+        margin: 8px;
+      }
+      .burger-menu {
+     
+     
+        display: block;
+      }
+  }

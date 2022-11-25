@@ -54,7 +54,6 @@ nav {
     left: 0;
     z-index: 1;
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
@@ -85,17 +84,81 @@ nav {
     
   }
   .burger-menu {
-    color: var(--primary-color);
+    color: #A15E42;
     font-size: 2rem;
     border: 0;
     background-color: transparent;
     cursor: pointer;
     display: none;
   }
+
+  @media screen and (max-width: 720px) {
+    /*responsiveness for screens with a width of 720px and below*/
+    nav {
+      padding: 1.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.852);
+      flex-direction: column;
+      top: 86px;
+      left: 30%;
+      width: 50%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
   
+     nav ul li {
+      margin: 8px;
+    }
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+    .about-btns{
+     padding-left: 100px;
+    }
+    .left{
+      padding-top: 100px;
+      padding-bottom: 5px;
+    }
+    .socials {
+
+      flex-direction: row;
+      position:relative;
+      left: 50%;
+      bottom: 0%;
+    }
+    
+    .socicon {
+      width: 2rem;
+      height: 2rem;
+    }
+    .vl{
+      border-left: 2px solid black;
+      width: 50px;
+      
+    }
+    .vl2{
+      border-left: 2px solid black;
+      
+      
+    }
+    .load-more {
+      
+      margin-left: 150px;
+      
+      
+      
+    }
+  }
   /* base style */
 
-  .h1,
+  
 .h2,
 .h3,
 .h4 {
@@ -104,8 +167,9 @@ nav {
 }
 
 .h1 {
-  font-size: var(--fs-1);
+  font-size: 30px;
   font-weight: 900;
+  
 }
 
 .h2 {
@@ -304,15 +368,17 @@ nav {
   .blog ion-icon { --ionicon-stroke-width: 50px; }
   
   .load-more {
-    margin-bottom: 6rem;
-    margin-left: 50px;
-    margin-inline: auto;
-    background: var(--foreground-secondary);
-    color: var(--background-secondary);
     
+      transition: all 0.5s ease-in-out;
+  }
+  .load-more:hover{
+      background: #A15E42;
+      border-color: #A15E42;
+      color: #fff;
   }
   
-  .load-more:hover { background: var(--accent); }
+  
+  
   
   
   
@@ -537,7 +603,7 @@ nav {
       gap: 30px;
     }
   
-    .desktop-nav {
+    /* .desktop-nav {
       display:     flex;
       align-items: center;
       gap: 30px;
@@ -548,7 +614,7 @@ nav {
       font-weight: 700;
     }
   
-    .desktop-nav .nav-link:hover { color: var(--accent); }
+    .desktop-nav .nav-link:hover { color: var(--accent); } */
   
     .theme-btn-desktop {
       position: relative;
@@ -627,7 +693,9 @@ nav {
   
     .hero .img-box {
       position: relative;
-      z-index: 2;
+      z-index: -2;
+      -webkit-animation: fade-in 0.9s ease-in-out both 0.5s;
+          animation: fade-in 0.9s ease-in-out both 0.5s;
     }
   
     .hero-img {
@@ -850,6 +918,37 @@ nav {
       .socicon {
         width: 2rem;
         height: 2rem;
+       margin-right: 60px;
       }
       
+}
+@media (max-width: 400px){
+
+.socials{
+  /* padding-right: 200px; */
+  margin-bottom: 20px;
+  left:35%;
+}
+.about-btns{
+  padding-left: 20px;
+}
+
+}
+
+/* animation */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/* styling for the nav */
+
+
+
+:root { 
+    --font-family: "Roboto", sans-serf;
+    --blue-maincolor: #00acee;
+    --lightblue-accent-color: #DBF5FF;
+    --darkblue-accent-color: #0092C9;
+    --bg-color: white;
+    --lightgray-accent-color: #DADADA;
+    --main-font: Arial;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  
+  body{
+    
+    font-family: var(--font-family);
+  overflow:unscrollable;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.0rem 3rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav h1{
+    font-weight: bold;
+    color: black;
+
+  }
+  
+  nav a {
+    color: black;
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: #A15E42;
+    border-bottom: 2px solid grey;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: bold;
+  }
+  .burger-menu {
+    color:#A15E42 ;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  
+  h1, h2, h3, h4, p {
+    font: var(--main-font);
+  }
+  
+  button { 
+    color: black;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+  }
+  
+  #mailSection { 
+    border-color: var(--lightgray-accent-color);
+    border-style: solid;
+    margin: 10% auto 10px auto;
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+   
+    position: relative;
+  }
+  
+  .icon-section { 
+    display: inline-block;
+    width: 50px;
+    padding-right: 10px;
+    position: relative;
+  }
+  
+  .text-section { 
+    margin-right: 40p;
+    display: inline-block;
+    width: 520px;
+  }
+  
+  .profile-icon{ 
+    width: 50px;
+    position: absolute;
+    bottom: 130px;
+    right: 15px;
+    border-radius: 50%;
+  }
+  
+  .blog-btn-visibility {
+    margin-bottom: 15px;
+    padding: 3px 5px;
+    display: block;
+    border-radius: 10px;
+    border-color: #A15E42;
+    border-style: solid;
+  }
+  .blog-btn-visibility img { 
+    width: 10px;
+    padding: 0px 3px 0px 3px;
+    color: #A15E42;
+  }
+  .blog-btn-visibility:hover { 
+    background-color: #A15E42;
+    border-color: black;
+  }
+  
+  .blog-btn-reply {
+    border-radius: 10px;
+    border-style: none;
+    position: relative;
+    right: 180px;
+    margin-top: 10px;
+  }
+  
+  .blog-btn-reply img { 
+    width: 15px;
+    margin-right: 3px;
+    color: #A15E42;
+  }
+  
+  .blog-btn-reply:hover { 
+    background-color: #a15e42a2;
+  }
+  
+  #textbox { 
+    width: 500px;
+    min-height: 50px;
+    border-width: 0px;
+    font-size: 20px;
+    outline: none;
+    display: block;
+    overflow: hidden;
+    display: block;
+    resize: none;
+   /* maxlength: 100px in HTML */ 
+  }
+  
+  
+  
+  .bottom {
+    margin-top: 20px auto 20px auto;
+  }
+  
+  #charCount { 
+    position: relative;
+    left: 75px;
+    font-size: 1.2rem;
+    color: #A15E42;
+   
+  }
+  
+  .blogButton {
+    padding: 10px 30px 10px 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    left: 75px;
+    color: white;
+    background-color: #A15E42;
+    border-style: none;
+    border-radius: 20px;
+  }
+  
+  .blogButton:hover { 
+   background-color: var(--darkblue-accent-color);
+  }
+  
+  .blogform-divider { 
+    color: var(--lightgray-accent-color);
+    border-style: solid none none none;
+  }
+  
+  .blog-icons { 
+   position: relative;
+   right: 85px;
+   top: 10px;
+   height: 25px;
+   padding: 5px;
+  }
+  
+  .blog-icons:hover { 
+  background-color: var(--lightblue-accent-color);
+  }
+
+  @media (max-width: 280px) and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;
+      }
+      nav ul {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.852);
+        flex-direction: column;
+        top: 86px;
+        left: 50%;
+        width: 50%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+      }
+    
+       nav ul li {
+        margin: 8px;
+      }
+      .burger-menu.show{
+        display: block;
+      }
+    
+      nav ul.show {
+        transform: translateX(0);
+      }
+  }

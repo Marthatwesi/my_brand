@@ -81,6 +81,16 @@ nav {
   nav ul li {
     font-weight: var(--bold-font);
   }
+  .burger-menu {
+    color:#A15E42 ;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  
   /* style for the boady */
 
   
@@ -133,6 +143,8 @@ body{
     overflow: hidden;
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
+    -webkit-animation: slide-up 0.8s ease-in-out both;
+    animation: slide-up 0.8s ease-in-out both;
 }
 .shadow{
     margin-left: auto;
@@ -197,9 +209,13 @@ body{
 .about-right h1{
     font-size: 5rem;
     text-transform: uppercase;
+    -webkit-animation: slide-up 0.8s ease-in-out both;
+    animation: slide-up 0.8s ease-in-out both;
 }
 .about-right h1 span{
     color: #A15E42;
+    -webkit-animation: slide-up 0.8s ease-in-out both;
+    animation: slide-up 0.8s ease-in-out both;
 }
 .about-right h2{
     font-weight: 600;
@@ -248,6 +264,10 @@ body{
     opacity: 0.8;
 }
 
+
+
+
+
 @media screen and (min-width: 992px){
     .about-wrapper{
         display: grid;
@@ -272,11 +292,71 @@ body{
     text-decoration: none;
     color:#B721FF;
     font-weight: bold;
-} 
+}
 
 
 
+@media screen and (max-width: 720px) {
+    /*responsiveness for screens with a width of 720px and below*/
+    nav {
+      padding: 1.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.852);
+      flex-direction: column;
+      top: 86px;
+      left: 50%;
+      width: 50%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+     nav ul li {
+      margin: 8px;
+    }
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+    
+}
+@media (max-width: 420px){
+.about-wrapper {
+    margin-left:10px;
+    
+ }
+}
 
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 
   
