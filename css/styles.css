@@ -16,12 +16,51 @@
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
   --transition: 0.3s;
+
+
+  
+
 }
 /* Variables end */
+/* when scrolling */
+
 
 html {
   scroll-behavior:inherit;
 }
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  display: block;
+  color: var(--foreground-primary);
+}
+
+.h1 {
+  font-size: var(--fs-1);
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: var(--fs-3);
+  font-weight: 700;
+}
+
+.h4 {
+  font-size: var(--fs-4);
+  font-weight: 700;
+}
+
+.text-sm { font-size: var(--fs-4); }
+
+.text-tiny { font-size: var(--fs-5); }
+
 
 /* css for the nav bar */
 * {
@@ -81,9 +120,21 @@ nav {
   nav ul li {
     font-weight: var(--bold-font);
   }
+<<<<<<< HEAD
 
 
 
+=======
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+>>>>>>> 40427db (Added the blog page and afew edits)
 /* style for the landing Page */
 .hero {
   padding-top: 20px;
@@ -147,194 +198,9 @@ nav {
 
 
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body{
-  
-  font-family: 'Poppins', sans-serif;
-}
-.about-wrapper{
-   height: 100vh;
-}
-.about-left{
-  /* background-color: #21D4FD; */
-  background-image: linear-gradient(19deg, #2d231f 0%, #9D9696  100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  
-  color:#fff
-}
-.about-left-content > div{
-  background: #A15E42;
-  opacity: 80%;
-  padding: 4rem 4rem 2.5rem 5rem;
-  text-align: center;
-  
-  border-radius: 12px 12px 0 0;
-}
-.about-left-content{
-  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
-  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
-  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
-  border-radius: 12px;
-  width:80%;
-}
-.about-img img{
-  display: block;
-  width: 200px;
-}
-.about-img{
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  transition: all 0.5s ease-in-out;
-}
-.shadow{
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
 
 
-
-.about-left-content h2{
-  font-size: 2rem;
-  margin: 2.2rem 0 0.6rem 0;
-  line-height: 1.2;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #A15E42;
-}
-.about-left-content h3{
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 5px;
-  margin-top: 1.2rem;
-}
-.icons{
-  background: black;
-  display: flex;
-  justify-content: center;
-  padding: 0.8rem 0;
-  border-radius: 0 0 12px 12px;
-}
-.icons li{
-  list-style-type: none;
-  background: #A15E42;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-.icons li:hover{
-  background: #edffec;
-  color: #000;
-}
-.about-right{
-  background: black;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 5rem;
-  text-align: center;
-  color:#fff
-}
-.about-right h1{
-  font-size: 5rem;
-  text-transform: uppercase;
-}
-.about-right h1 span{
-  color: #A15E42;
-}
-.about-right h2{
-  font-weight: 600;
-}
-.about-btns{
-  display: flex;
-  margin: 2rem 0;
-}
-.btn{
-  border: none;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-
-  border: 2px solid #fff;
-  border-radius: 20px;
-  padding: 0.55rem 0;
-  width: 130px;
-  font-weight: 600;
-  background: transparent;
-  margin: 0 0.5rem;
-  cursor: pointer;
-  color:#fff
-}
-#btn1{
-  background: #A15E42;
-  color: #fff;
-  border-color: #A15E42;
-  transition: all 0.5s ease-in-out;
-}
-#btn1:hover{
-  background: transparent;
-  border-color: #fff;
-  color: #fff;
-}
-#btn{
-  transition: all 0.5s ease-in-out;
-}
-#btn2:hover{
-  background: #A15E42;
-  border-color: #A15E42;
-  color: #fff;
-}
-#about-para p{
-  font-weight: 300;
-  padding: 0.5rem;
-  opacity: 0.8;
-}
-
-@media screen and (min-width: 992px){
-  .about-wrapper{
-      display: grid;
-      grid-template-columns: repeat(2, 2fr);
-  }
-
-  .about-left{
-      position: relative;
-  }
-  .about-left-content{
-      position: absolute;
-      width:80%
-  
-  }
-}
-.credit{
-  text-align: center;
-  color: #fff;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.credit a{
-  text-decoration: none;
-  color:#B721FF;
-  font-weight: bold;
-} 
+ 
 /* styles for myskils section */
 .skills {
   max-width: 68.75rem;
@@ -351,7 +217,11 @@ body{
   font-size: 35px;
 }
 .skill_img img{
+<<<<<<< HEAD
   size: 60px;
+=======
+  size: 40px;
+>>>>>>> 40427db (Added the blog page and afew edits)
   align-items: center;
 }
 .icon {
@@ -363,8 +233,9 @@ body{
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
-  margin: 10px;
-  float: left;
+  margin: 15px;
+ float: left;
+
 }
 .circle-wrap {
 
@@ -443,8 +314,10 @@ margin: 30px;
 /* style for the portfolio */
 .projects {
   background-color: var(--bg-color);
-  padding: 32px 0;
+  margin-left: 100px;
   margin-top: 2rem;
+  padding-left: 20px;
+  float: inline-start;
 }
 
 .project-pic {
@@ -457,8 +330,36 @@ margin: 30px;
   align-items: center;
   justify-content: center;
 }
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+.project-container p {
+  padding: 0.4rem;
+}
 
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 30px;
+}
+ 
 
 /* styles for the footer */
 .vl{
@@ -490,3 +391,74 @@ margin: 30px;
   margin-left: 99px;
   bottom: 8%;
 }
+
+@media screen and (max-width: 720px) {
+  /*responsiveness for screens with a width of 720px and below*/
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+   nav ul li {
+    margin: 8px;
+  }
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero img {
+        height: 37.5rem;
+        width: 30rem;
+    }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+  .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .more-about h2 {
+    text-align: center;
+  }
+
+  .more-about p {
+    text-align: justify;
+  }
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+
