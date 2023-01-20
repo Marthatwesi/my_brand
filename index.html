@@ -12,17 +12,9 @@
 </head>
 
 <body>
-  <!-- ========== Start pre loader ========== -->
-  <div class="preloader">
-    <div class="box">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <!-- ========== End pre loader ========== -->
-  <nav class="navbar">
-    <h1><a href="#">MARTHA TWESIGYE</a></h1>
+ 
+  <nav class="navbar">   
+    <h1><a href="#" class="adminLink">MARTHA TWESIGYE</a></h1>
     <ul class="navigation">
       <li><a href="#home">Home</a></li>
       <li><a href="./about.html" class="nav-link">About Me</a></li>
@@ -100,7 +92,6 @@
   <section class="projects" id="projects">
     <h2 class="projects-title">My Work</h2>
     <div class="projects-container">
-     
       <div class="project-container project-card">
         <img src="./img/project1.jpg" alt="expense-tracker" loading="lazy" class="project-pic" />
         <h3 class="project-title">Expense Tracker</h3>
@@ -131,62 +122,31 @@
   </section>
 
 
-  <section class="contact" id="contact">
-    <h2>Please Get In Touch With Me</h2>
-    <div class="contact-form-container">
-      <div class="contact-form">
-        <form action="https://formspree.io/f/xyylngw" method="POST">
-          <div class="form-control">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="sender-name"
-              placeholder="Enter Your Name"
-              class="input-field"
-              required
-            />
-          </div>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="sender-email"
-              placeholder="Enter Your Email"
-              class="input-field"
-              required
-            />
-          </div>
-          <div class="form-control">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              cols="60"
-              rows="10"
-              placeholder="Enter Your Message"
-              name="message"
-              class="input-field"
-              required
-            ></textarea>
-          </div>
-          <input
-            type="submit"
-            value="Send"
-            id="submit-btn"
-            class="submit-btn"
-          />
-        </form>
-      </div>
+  
+    
+  <h2 class="contact-h2">Please Contact Me Here</h2>
+  <div class="login-form">
+   
+    <form class="form" id="form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="contact-name" name="name" placeholder="Enter your name.." onkeyup='validateName()'>
+        <span class='error-message' id='name-error'></span>
     </div>
-  </section> 
-  <footer>
 
+    <div class="form-group">
+        <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+        <span class='error-message' id='email-error'></span>
+    </div>   
 
-
-
-
-
+    <div class="form-group">
+        <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+        <span class='error-message' id='message-error'></span>
+    </div>    
+    <button id="btn1" class="btn">Submit</button>
+    <span class='error-message' id='submit-error'></span>
+</form>
+ </div>
+      
   <footer>
     <div class="socials">
       <div class="vl"></div>
@@ -198,23 +158,19 @@
           class="socicon" /></a>
       <div class="vl2"></div>
     </div>
-    <!-- <p class="copy">&copy; 2022 Martha-creatives</p> -->
+    
   </footer>
 
+  <dialog class="loader">
+    <img src="./img/load.gif" alt="">
+  </dialog>
   
-
-
-
-  <script src="js/main.js"></script>
-  <!-- ICONS -->
-  <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+  <dialog class="msgSent">
+    <img src="./img/msgSent.png" alt="">
+    <h1>SENT!</h1>
+    <Button class="okBtn">OK</Button>
+   </dialog>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

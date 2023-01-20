@@ -120,7 +120,15 @@
     font-weight: bold;
     text-decoration: none;
   }
+  .dash{
+    margin: 10;
+    background-color: #A15E42;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
   
+  }
   .nav2 a.active {
     background: #A15E42;
   }
@@ -140,7 +148,6 @@
     position: relative;
     /* margin: 5px 5px 5px 0px; */
   }
-  
   
   
   input[name=search] {

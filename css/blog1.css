@@ -105,7 +105,22 @@ body {
 
 
 /* styling for the comment section */
-
+/* [type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; } */
 
 .commentsection{
   font: normal 13px sans-serif;
@@ -149,6 +164,9 @@ body {
   order: 3;
 }
 
+.com-error{
+  visibility: hidden;
+}
 
 .comment .info a{	/* User name */
   display: block;
@@ -206,7 +224,7 @@ body {
 }
 
 .comment.user-comment p{
-  color:#808080;
+  color:#A15E42;
   background-color:  #f3f3f3;
 }
 
