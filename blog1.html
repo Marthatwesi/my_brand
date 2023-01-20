@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/blog1.scss">
     <link rel="stylesheet" href="css/blog1.css">
     <title></title>
 </head>
@@ -28,7 +27,7 @@
         <div>
           <div class="absolute-bg">
             <img src="./img/blog1.jpg" alt="robot"
-                      width="1700" height="1200" class="blog-banner-img">
+                      width="1100" height="900" class="blog-banner-img">
           </div>
          
         </div>
@@ -52,23 +51,21 @@
       
       <section class="commentsection" id="commentsection">
         <ul class="comment-section">
-
+<!-- 
           <li class="comment user-comment">
     
                     <div class="info">
                         <a href="#">Anie Silverston</a>
-                        <span>4 hours ago</span>
                     </div>
     
                     <a class="avatar" href="#">
-                        <img src="./img/prof2.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+                        <img src="./img/avatar.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
                     </a>
-    
-                    <p>Very insightful blog</p>
+                 <p>Very insightful blog</p>
     
           </li>
-    
-          <li class="comment author-comment">
+     -->
+          <!-- <li class="comment user-comment">
     
                     <div class="info">
                         <a href="#">Martha.T</a>
@@ -97,7 +94,7 @@
     
           </li>
     
-                <li class="comment author-comment">
+                <li class="comment user-comment">
     
                     <div class="info">
                         <a href="#">Martha.T</a>
@@ -108,26 +105,29 @@
                         <img src="./img/PHOTO-2021-07-22-23-30-20.jpg" width="35" alt="Profile Avatar" title="Martha.T" />
                     </a>
     
-                    <p>You are Most welcome. Robots are surely taking over but humans stay the most inteligent. Nothing will bit that.</p>
-                </li>
+                    <p>You are Most welcome. Robots are surely taking over but humans stay the most inteligent. Nothing will beat that.</p>
+                </li> -->
     
-                <li class="write-new">
+        </ul>
+        <ul>
+          <li class="write-new">
     
-                    <form action="#" method="post">
-    
-                        <textarea placeholder="Write your comment here" name="comment"></textarea>
-    
-                        <div>
-                            <button type="submit">Submit</button>
-                        </div>
-    
-                    </form>
-    
-                </li>
-    
+            <form class="newComment">
+
+                
+            <textarea placeholder="Write your comment here" onkeyup='validateComment()' id='comment-message' name="comments"></textarea>
+            <small class="com-error">error</small>
+                <span class='error-comment' id='comment-error'></span>
+                <div>
+                    <a  href="#"><button onclick='return validateCommentForm()' type="submit" >Submit</button></a>
+                </div>
+
+            </form>
+
+        </li>
         </ul>
     
       </section>
-
+      <script src="js/comment.js"></script>
 </body>
 </html>

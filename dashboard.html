@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="shortcut icon" href="./img/PHOTO-2021-07-22-23-30-20.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
+
+    <title></title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1><a href="#" class="adminLink">MARTHA TWESIGYE</a></h1>
+        <ul class="navigation">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html" class="nav-link">About Me</a></li>
+          <li><a href="./index.html" class="nav-link">Skills</a></li>
+          <li><a href="./blog.html" class="nav-link">Blog</a></li>
+          <li><a href="./index.html" class="nav-link">Contact</a></li>
+          <li><a href="./login.html" class="nav-link">Login</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+      </nav>
+      <dialog class="pop-up">
+        <form id="mailSection" >
+        <input type="text" class="tArticle" placeholder="Title">
+        <small class="error-title">error</small>
+        <input type="file" class="iArticle"placeholder="Upload Image">
+        <div class="imagePop"><img src="" class="imgTag" alt=""></div>
+        <small class="error-image">error</small>
+          <!-- <div class="icon-section">
+           <img src="./img/PHOTO-2021-07-22-23-30-20.jpg"  alt="icon-image" class="profile-icon">
+          </div> -->
+            <div class="text-section">  
+    
+            <textarea name="editor1" id="editor1" placeholder="What's happening?"></textarea>
+            <small class="error-content">error</small>
+              <div class="bottom">
+                <hr class="blogform-divider">
+                <button class="blogButton" type="submit">Post</button>
+              </div>  
+            </div>
+
+          </form>
+         </dialog>
+
+         <!-- //update dialog -->
+         <dialog class="pop-up2">
+          <form id="blogSection" >
+          <input type="text" class="tArticle" id="editT" placeholder="Title">
+          <small class="error-title">error</small>
+         <input type="file" class="iArticle" id="iArticle" placeholder="Upload Image">
+          <div class="imagePop" id="imagePop"><img src="" class="imgTag" id="editI" alt=""></div>
+          <small class="error-image">error</small>
+            
+              <div class="text-section">   
+              <textarea name="editor2" id="editor2" placeholder="What's happening?"></textarea>
+              <small class="error-content">error</small>
+                <div class="bottom">
+                  <hr class="blogform-divider">
+                  <button class="blogButton" type="submit">Update</button>
+              
+                </div>  
+              </div>
+  
+            </form>
+           </dialog>
+           <!-- <section class="attendance"> -->
+                <div class="main-top">
+                  <h1>DASHBOARD</h1>
+                  <button  class="new-blog create">Create New Blog</button>
+                  <a href="./mail.html"><button class="mail" id="./mail.html">View Messages</button></a>
+                </div>
+                <div class="attendance-list">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Post Time</th>
+                        <th>Edit </th>
+                        <th>Delete</th>
+                        <th>Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- <tr>
+                        <td>01</td>
+                        <td>How has Tech influenced Mental Health</td>
+                        <td>10-03-22</td>
+                        <td>9:00</td>
+                        <td><button>Edit</button></td>
+                        <td><button>Delete</button></td>
+                        <td><button>View</button></td>
+                      </tr>
+                      <tr>
+                        <td>02</td>
+                        <td>Unlock the Coder In You</td>
+                        <td>03-10-22</td>
+                        <td>21:00</td>
+                        <td><button>Edit</button></td>
+                        <td><button>Delete</button></td>
+                        <td><button>View</button></td>
+                      </tr>
+                      <tr>
+                        <td>03</td>
+                        <td>Use PHP in Web Development</td>
+                        <td>01-80-22</td>
+                        <td>17:00</td>
+                        <td><button>Edit</button></td>
+                        <td><button>Delete</button></td>
+                        <td><button>View</button></td>
+                      </tr>
+                      <tr>
+                        <td>04</td>
+                        <td>Robots replacing humans in most industries</td>
+                        <td>03-10-22</td>
+                        <td>8:00</td>
+                        <td><button>Edit</button></td>
+                        <td><button>Delete</button></td>
+                        <td><button>View</button></td>
+                      </tr>
+                       -->
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <!-- //loader dialog -->
+              <dialog class="alert">
+                  <h2>Posted</h2>
+                  <button class="ok">OK</button>
+              </dialog>
+              <dialog class="alert1">
+                <h2>Updated</h2>
+                <button class="ok1">OK</button>
+            </dialog>
+              <dialog class="loader">
+                <img src="./img/load.gif" alt="">
+              </dialog>
+
+          </div>
+        </section>
+      
+        <script src="js/main.js"></script>
+</body>
+</html>
