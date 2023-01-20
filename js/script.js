@@ -110,6 +110,7 @@ p1.className = "text-sm";
 // p1.innerText = dateNow;
 const ion = document.createElement("ion-icon");
 ion.name = "heart-outline";
+ion.style.cursor = "pointer"
 const small = document.createElement("small");
 small.className = "like";
 small.innerText = articles[i].likes.numberLikes
